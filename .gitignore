@@ -102,3 +102,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# working dirs
+payload/*
+storage/*
+outputs/*
+
+# don't ignore keep files
+!.gitkeep

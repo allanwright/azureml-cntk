@@ -1,0 +1,20 @@
+{
+    "subscription_id": "<azure_subscription_id>",
+    "resource_group": "<azure_resource_group>",
+    "workspace_name": "<azure_workspace_name>",
+    "experiment_name": "<azure_experiment_name>",
+    "compute_target": "<azure_workspace_compute_target>",
+    "payload_path": "./payload",
+    "payload": [
+        "./train.py"
+    ],
+    "dependencies": [
+        "cntk-gpu==2.6",
+        "numpy"
+    ],
+    "custom_docker_base_image": "microsoft/mmlspark:gpu-0.12",
+    "use_gpu": "True",
+    "verbose_output": "True",
+    "download_outputs": "True",
+    "download_path": "./outputs"
+}
